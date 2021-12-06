@@ -1,59 +1,112 @@
-html{
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body{
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0,0,0,0.9);
-    max-width: 100%;
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #ffffff;
+  --text-secondary: #000000;
 }
-ul,li,h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-    padding: 0;
+html {
+  scroll-behavior: smooth;
 }
-.container{
-    max-width: 100%;
-}
-
-.flex{
-    display: flex;
-    flex: 1 1 ;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    border: 3px solid black;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: 10vh;
-    perspective: 150;
-    transition: 0.5s;
-    gap: 20px;
-    transform: translateX(-30vh);
+body {
+  scroll-behavior: smooth;
+  background-color: #111111;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  color: var(--text-primary);
 }
 
-.flex > div{
-    margin: 3vh 0 0 auto;
-    border: 3px solid black;
-    background-color: black;
-    text-align: center;
-    transform: rotateX(0deg) rotateY(355deg);
-    transform-style: preserve-3d;
-    transition: 0.5s;
-    
-}
-.flex > div:hover{
-  transform: scale(1.2) rotateX(0deg) rotateY(355deg);
+.navbar {
+  top: 0;
+  position: sticky;
+  width: 100%;
+  height: 2vh;
+  overflow: hidden;
+  background: #1a1a1a;
+  z-index: 100;
   transition: 0.5s;
-  z-index: 2;
+  margin: 0 0 10vh 0;
 }
-.flex > div:nth-child(3){
-    min-width: 30vh;
-    max-width: 30vh;
+
+.nav-main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 0 0 auto;
+  max-width: 50vh;
 }
-.flex-button{
-    min-width: 30vh;
-    min-height: 15vh;
-    margin: auto;
+.nav-item {
+  width: 100%;
+  height: 5vh;
+  background: #dddddd;
+  color: var(--text-secondary);
+  border-radius: 30px/90px;
+  margin: 2vh 1vh;
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  display: block;
+  margin: 1vh;
+}
+main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+//active states
+.navbar:hover {
+  height: 10vh;
+}
+.nav-arrow {
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  display: block;
+  margin: -10vh auto 0 auto;
+  text-align: center;
+  font-size: 4vh;
+  cursor: pointer;
+  z-index: 3;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  
+}
+.blink-anim{
+  animation: ping 1.5s ease-in-out infinite alternate both;
+}
+@keyframes rotate-arrow2 {
+  0% {
+    transform: rotatex(180deg);
+  }
+  100% {
+    transform: rotatex(0deg);
+  }
+}
+@keyframes rotate-arrow {
+  0% {
+    transform: rotatex(0deg);
+  }
+  100% {
+    transform: rotatex(180deg);
+  }
+}
+@keyframes ping {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: .05;
+  }
 }
