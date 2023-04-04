@@ -1,0 +1,73 @@
+@import "../../scss/variables.scss";
+
+.experience {
+  min-width: 17.5rem;
+  max-width: 50%;
+  margin: auto;
+  > h2 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: white;
+  }
+  .experience-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+    gap: 3rem;
+    .card {
+      background: rgb(56, 56, 56);
+      width: 25rem;
+      min-height: 17.5rem;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      color: rgba(255, 255, 255, 0.986);
+      filter: drop-shadow(.1rem .1rem 1rem rgba(0, 0, 0, 0.425));
+      .main-info {
+        min-height: 6rem;
+        h3 {
+          font-size: 2rem;
+          letter-spacing: 0.07rem;
+        }
+        h4 {
+          font-size: 1.2rem;
+          letter-spacing: 0.07rem;
+        }
+      }
+      .minor-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem 0 0 0;
+        color: rgb(223, 223, 223);
+        h5 {
+          font-size: 1.15rem;
+        }
+        h6 {
+          position: relative;
+          font-size: 1.15rem;
+          &::before{
+            position: absolute;
+            content: '';
+            width: .15rem;
+            height: 100%;
+            transform: translateX(-.5rem) ;
+            background: rgba(255, 255, 255, 0.705);
+          }
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        letter-spacing: 0.05rem;
+        margin: 1rem 0 0 0;
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+    }
+  }
+}

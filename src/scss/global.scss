@@ -1,0 +1,19 @@
+@import './variables.scss';
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: $bg-dark;
+    margin: 0;
+    font-family: $font-family;
+}
+::-webkit-scrollbar {
+    background: rgb(57, 59, 59);
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(153, 153, 153);
+  }
