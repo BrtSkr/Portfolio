@@ -1,3 +1,5 @@
+# Live
+* https://642d12217b8e355a01f706bc--ubiquitous-babka-659908.netlify.app/
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
