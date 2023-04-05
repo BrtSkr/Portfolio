@@ -1,7 +1,11 @@
 @import '../../scss/variables.scss';
 $font--main-size: clamp(3rem, 8vw, 5.5rem);
 $underline-color: #4EE1A0;
-
+@keyframes rotater {
+    100%{
+        transform: scale(1.1) translateX(35rem) translateY(-10rem) rotate(360deg);
+    }
+}
 header {
     overflow: hidden;
     .container{
@@ -11,7 +15,7 @@ header {
         margin: 2rem auto;
         color: $font-color;
         min-width: 17.5rem;
-        max-width: 50%;
+        max-width: 60%;
         min-height: 40rem;
         border-bottom: .15rem gray solid;
 
@@ -19,12 +23,14 @@ header {
             position: absolute;
             content: '';
             width: 40rem;
-            height: 90%;
-            background: rgba(58, 58, 58, 0.233);
+            height: 40rem;
+            background: url(./img/Monetp-b.png) no-repeat;
             top: 0;
-            right: -15rem;
-            
+            right: 0;
+            transform: scale(1.1) translateX(32rem) translateY(-10rem);
+            //left: 0;
             z-index: -1;
+            animation: rotater 20s infinite;
         }
         
         >h1 {

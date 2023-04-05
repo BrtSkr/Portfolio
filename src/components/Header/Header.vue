@@ -16,7 +16,7 @@ export default defineComponent({
                 <a href="#experience">Check more!
                     <span></span><span></span><span></span><span></span>
                 </a>
-                <a href="">Contact me
+                <a href="#contact">Contact me
                     <span></span><span></span><span></span><span></span>
                 </a>
             </div>

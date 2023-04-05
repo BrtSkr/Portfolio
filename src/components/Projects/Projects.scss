@@ -1,10 +1,94 @@
-@import '../../scss/variables.scss';
-.projects{
+@import "../../scss/variables.scss";
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+.projects {
     min-width: 17.5rem;
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
-    >h2{
+
+    >h2 {
         font-size: $font-section-clamp;
         color: white;
+        .blink{
+
+            animation: blinker 1s linear infinite;
+            //animation: name duration timing-function delay iteration-count direction fill-mode;
+          }
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+
+        .project {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            transition: 0.3s all;
+            gap: 5vw;
+            min-height: 15rem;
+            &:hover {
+                transform: scale(1.1);
+                
+                >img {
+                    
+                    
+                    transform: scale(1.1);
+                }
+            }
+            
+            >img {
+                //background: url(./img/Screenshot_57.png);
+                min-width: 17.5rem;
+                max-width: 30rem;
+                transition: 0.3s all;
+                transition-delay: 0.15s;
+                border-radius: .5rem;
+            }
+
+            .details {
+                width: 25rem;
+                color: white;
+
+                .name {
+                    font-size: 1.5rem;
+                }
+
+                .description {
+                    font-size: clamp(0.5rem, 1rem, 1.5rem);
+                }
+                .project-anchors{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: rgb(238, 130, 148);
+                        width: 6rem;
+                        height: 2rem;
+                        text-decoration: none;
+                        border-radius: .5rem;
+                        color: black;
+                        transition: .3s all;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                        &:nth-child(2){
+                            background: violet;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

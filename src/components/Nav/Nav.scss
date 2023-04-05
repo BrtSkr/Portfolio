@@ -6,20 +6,26 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.651);
-    min-width: 50%;
+    min-width: 19rem;
     max-width: 50%;
     margin: auto;
     padding: 0 1rem;
     font-size: 1.25rem;
     color: $font-color;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     z-index: 10;
     border-radius: 0 0 .5rem .5rem;
     .nav-anchors{
         display: flex;
         justify-content: center;
         gap: 1rem;
+        
         a{
+            font-size: 2rem;
+            transition: .3s all;
+            &:hover{
+                transform: scale(1.1);
+            }    
             margin: auto 0;
             &:nth-child(1){
                 color: #73599b;
@@ -27,6 +33,15 @@ nav{
             &:nth-child(2){
                 color: #2a68b3;
             }
+            &:nth-child(3){
+                color: #4EE1A0;
+            }
         }
+    }
+}
+@media screen and (max-width: 720px) {
+    nav{
+        text-align: center;
+        flex-direction: column;
     }
 }

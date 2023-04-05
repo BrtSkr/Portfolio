@@ -1,0 +1,68 @@
+@import "../../scss/variables.scss";
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+.skills {
+  min-width: 17.5rem;
+  max-width: 60%;
+  margin: auto;
+
+  > h2 {
+    font-size: $font-section-clamp;
+    color: white;
+    .skills-code{
+        animation: blinker 1s linear infinite;
+        font-size: 3rem;
+        color: #4EE1A0;
+    }
+  }
+  > p {
+    font-size: 1.15rem;
+    max-width: 30rem;
+    color: white;
+    //text-align: center;
+    //margin: 1rem auto 0 auto;
+    > a {
+      text-decoration: none;
+      color: violet;
+    }
+  }
+  .main-technologies {
+    color: white;
+    margin: auto;
+    max-width: 20rem;
+    > h3 {  
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .technologies-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      gap: 1rem;
+      max-width: 15rem;
+      .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s all;
+        &:hover{
+          transform: scale(1.1);
+        }
+        .icon {
+          font-size: 3rem;
+        }
+        > p {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+}

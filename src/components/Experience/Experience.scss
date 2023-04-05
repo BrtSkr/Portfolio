@@ -1,8 +1,9 @@
 @import "../../scss/variables.scss";
+$hover-color: #4EE1A0;
 
 .experience {
   min-width: 17.5rem;
-  max-width: 50%;
+  max-width: 60%;
   margin: auto;
   > h2 {
     font-size: clamp(3rem, 8vw, 6rem);
@@ -12,17 +13,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     
     gap: 3rem;
     .card {
-      background: rgb(56, 56, 56);
+      background: rgb(29, 29, 29);
       width: 25rem;
       min-height: 17.5rem;
       padding: 1.5rem;
       border-radius: 0.5rem;
       color: rgba(255, 255, 255, 0.986);
       filter: drop-shadow(.1rem .1rem 1rem rgba(0, 0, 0, 0.425));
+      transition: all .3s;
+      &:hover{
+        filter: drop-shadow(.05rem .05rem 2rem rgba(97, 97, 97, 0.336));
+        transform: scale(1.1);
+      }
       .main-info {
         min-height: 6rem;
         h3 {
