@@ -32,7 +32,7 @@ export default defineComponent({
 
 <template>
     <div class="project" :class="rowOrientation">
-        <img v-bind:src="imgPath" :alt="projectName" />
+        <img loading="lazy" v-bind:src="imgPath" :alt="projectName" />
         <div class="details">
             <h3 class="name">{{ projectName }}</h3>
             <p class="description">{{ description }}</p>
