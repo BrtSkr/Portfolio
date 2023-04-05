@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts">
 import { defineComponent } from 'vue';
 import Nav from './components/Nav/Nav.vue';
 import Header from './components/Header/Header.vue';
@@ -7,7 +7,9 @@ import Projects from './components/Projects/Projects.vue';
 import Skills from './components/Skills/Skills.vue';
 import Footer from './components/Footer/Footer.vue';
 import './scss/global.scss';
-
+export default defineComponent({
+    components: {Nav, Header, Experience, Projects, Skills, Footer}
+})
 </script>
 
 <template>
