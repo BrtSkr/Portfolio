@@ -1,0 +1,86 @@
+@import '../../scss/variables.scss';
+$left-transform: translateX(-41rem) translateY(-6rem) rotate(120deg);
+$right-transform: translateX(41rem) rotate(120deg);
+
+.loader {
+    position: fixed;
+    top: 0;
+    background: $bg-dark-elevated-1;
+    z-index: 15;
+    color: transparent;
+    user-select: none;
+   
+} 
+.loader-left {
+        transform: translateX(-41rem) translateY(-5.5rem) rotate(120deg);
+        width: 100%;
+        height: 127.5%;
+}
+.loader-right {
+        width: 100%;
+        height: 127.5%;
+        transform: translateX(41rem) rotate(120deg);
+    }
+.loader-icon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    color: white;
+    font-size: 10rem;
+    width: 100%;
+    height: 100%;
+    animation: blinker 1s infinite;
+
+    
+    svg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.animate--hide-right {
+    animation: hider-right 5s;
+    animation-iteration-count: 1;
+    animation-delay: 2.2s;
+}
+
+.animate--hide-left {
+    animation: hider-left 5s;
+    animation-iteration-count: 1;
+    animation-delay: 2.2s;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+      color: #4EE1A0;
+    }
+  }
+@keyframes hider-left {
+    0% {
+
+
+        transform: translateX(-41rem) translateY(-5.5rem) rotate(120deg);
+
+
+    }
+
+    100% {
+
+        transform: translateX(-200rem) translateY(-5.5rem) rotate(120deg);
+
+    }
+}
+
+@keyframes hider-right {
+    0% {
+        transform: translateX(41rem) rotate(120deg);
+    }
+
+    100% {
+        transform: translateX(200rem) rotate(120deg);
+    }
+}

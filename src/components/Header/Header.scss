@@ -28,9 +28,8 @@ header {
             top: 0;
             right: 0;
             transform: scale(1.1) translateX(32rem) translateY(-10rem);
-            //left: 0;
             z-index: -1;
-            animation: rotater 20s infinite;
+            animation: rotater 20s infinite alternate;
         }
         
         >h1 {
