@@ -15,7 +15,7 @@ import { defineComponent } from 'vue';
     <div class="nav-anchors">
       <a href="https://github.com/BrtSkr"><font-awesome-icon :icon="['fab', 'github']" /></a>
       <a href="https://www.linkedin.com/in/bartosz-skrzydelski-764a45262/"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
-      <a href="mailto:brtskr1503@gmail.com"><font-awesome-icon :icon="['fas', 'envelope']" /></a>
+      <a href="mailto:skrzydelskibartosz@gmail.com"><font-awesome-icon :icon="['fas', 'envelope']" /></a>
     </div>
   </nav>
 </template>
