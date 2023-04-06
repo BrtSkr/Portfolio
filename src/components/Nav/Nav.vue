@@ -13,8 +13,8 @@ import { defineComponent } from 'vue';
   <nav class="nav">
     <p>BartoszSkrzydelski</p>
     <div class="nav-anchors">
-      <a href="https://github.com/BrtSkr"><font-awesome-icon :icon="['fab', 'github']" /></a>
-      <a href="https://www.linkedin.com/in/bartosz-skrzydelski-764a45262/"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+      <a target="_blank" href="https://github.com/BrtSkr"><font-awesome-icon :icon="['fab', 'github']" /></a>
+      <a target="_blank" href="https://www.linkedin.com/in/bartosz-skrzydelski-764a45262/"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
       <a href="mailto:skrzydelskibartosz@gmail.com"><font-awesome-icon :icon="['fas', 'envelope']" /></a>
     </div>
   </nav>

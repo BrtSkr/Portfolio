@@ -13,8 +13,8 @@ export default defineComponent({
       <h2>Contact me!</h2>
       <div class="socials">
         <h3>You can find me here:</h3>
-      <a href="https://github.com/BrtSkr"><font-awesome-icon :icon="['fab', 'github']" />Github</a>
-      <a href="https://www.linkedin.com/in/bartosz-skrzydelski-764a45262/"><font-awesome-icon :icon="['fab', 'linkedin']" />Linkedin</a>
+      <a target="_blank" href="https://github.com/BrtSkr"><font-awesome-icon :icon="['fab', 'github']" />Github</a>
+      <a target="_blank" href="https://www.linkedin.com/in/bartosz-skrzydelski-764a45262/"><font-awesome-icon :icon="['fab', 'linkedin']" />Linkedin</a>
       <a href="mailto:skrzydelskibartosz@gmail.com"><font-awesome-icon :icon="['fas', 'envelope']" />skrzydelskibartosz@gmail.com</a>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 @import '../../scss/variables.scss';
-$left-transform: translateX(-41rem) translateY(-6rem) rotate(120deg);
-$right-transform: translateX(41rem) rotate(120deg);
+$left-transform:  translateY(-50%) rotate(120deg);
+$right-transform: translateY(-50%) rotate(120deg);
 
 .loader {
     position: fixed;
@@ -9,18 +9,27 @@ $right-transform: translateX(41rem) rotate(120deg);
     z-index: 15;
     color: transparent;
     user-select: none;
-   
-} 
-.loader-left {
-        transform: translateX(-41rem) translateY(-5.5rem) rotate(120deg);
-        width: 100%;
-        height: 127.5%;
+
 }
+
+.loader-left {
+    //transform: $left-transform;
+    width: 200rem;
+    height: 200rem;
+    left: 0;
+    top: 50%;
+    transform:   translateY(-50%) rotate(120deg);
+}
+
 .loader-right {
-        width: 100%;
-        height: 127.5%;
-        transform: translateX(41rem) rotate(120deg);
-    }
+    right: 0;
+    top: 50%;
+    transform:   translateY(-50%) rotate(120deg);
+    width: 200rem;
+    height: 200rem;
+    //transform: $right-transform;
+}
+
 .loader-icon {
     position: fixed;
     top: 50%;
@@ -33,7 +42,7 @@ $right-transform: translateX(41rem) rotate(120deg);
     height: 100%;
     animation: blinker 1s infinite;
 
-    
+
     svg {
         position: fixed;
         top: 50%;
@@ -43,44 +52,46 @@ $right-transform: translateX(41rem) rotate(120deg);
 }
 
 .animate--hide-right {
-    animation: hider-right 5s;
+    animation: hider-right 4s;
     animation-iteration-count: 1;
-    animation-delay: 2.2s;
+    animation-delay: 1.5s;
 }
 
 .animate--hide-left {
-    animation: hider-left 5s;
+     animation: hider-left 4s;
     animation-iteration-count: 1;
-    animation-delay: 2.2s;
+    animation-delay: 1.5s;
 }
+
 @keyframes blinker {
     50% {
-      opacity: 0;
-      color: #4EE1A0;
+        opacity: 0;
+        color: #4EE1A0;
     }
-  }
+}
+
 @keyframes hider-left {
     0% {
 
 
-        transform: translateX(-41rem) translateY(-5.5rem) rotate(120deg);
+        transform: $left-transform;
 
 
     }
 
     100% {
 
-        transform: translateX(-200rem) translateY(-5.5rem) rotate(120deg);
+        transform: translateX(-300rem) translateY(-50%) rotate(120deg);
 
     }
 }
 
 @keyframes hider-right {
     0% {
-        transform: translateX(41rem) rotate(120deg);
+        transform: $right-transform;
     }
 
     100% {
-        transform: translateX(200rem) rotate(120deg);
+        transform: translateX(300rem) rotate(120deg);
     }
 }
