@@ -11,7 +11,7 @@ export default defineComponent({
         <div class="container">
             <h1>Nice to meet you!</h1>
             <p class="name">I'm <span>Bartosz Skrzydelski.</span></p>
-            <p class="description">My career aspiration is to be a Frontend developer. In my leisure time, I develop personal projects using HTML, CSS, JavaScript, and React.js. I am driven to further my skills in this area and continuously enhance my abilities.</p>
+            <p class="description">Passionate IT professional with technical education and expertise in programming. Graduated from a technical high school excelling as an IT technician, proficient in SQL, network management, and PC repairs. Actively engaged in personal projects focused on JavaScript, React.js, Vue.js, Sass, HTML5, and CSS3, expanding programming skills. Strong problem-solving, attention to detail, and collaborative mindset developed through hands-on experience with diverse languages, frameworks, and libraries.</p>
             <div class="button-container">
                 <a href="#experience">Check more!
                     <span></span><span></span><span></span><span></span>
