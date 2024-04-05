@@ -1,6 +1,24 @@
-.flex-row-reverse{
+.flex-row-reverse {
     flex-direction: row-reverse !important;
 }
-.flex-row{
+
+.flex-row {
     flex-direction: row !important;
+}
+
+@mixin blink($duration, $color: gray){
+    animation: blinker linear infinite;
+    animation-duration: $duration + s;
+    color: $color;
+}
+.blink {
+
+    animation: blinker 1s linear infinite;
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }

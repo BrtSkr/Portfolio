@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <!-- <div>
       <div ref="loaderRight" class="loader loader-right animate--hide-right">
         T
       </div>
@@ -9,7 +9,7 @@
       <div ref="loaderLeft" class="loader loader-left animate--hide-left">
         T
       </div>
-    </div>
+    </div> -->
   </template>
   
   <script lang="ts">
